@@ -9,8 +9,8 @@ import java.util.Arrays;
 public class VenkyJavaPocApp {
     public static void main(final String[] args) {
         App app = new App();
-
-        new VenkyJavaPocStack(app, "VenkyJavaPocStack", StackProps.builder()
+        new VenkyJavaPocStack(app, "VenkyJavaPocStack");
+        //new VenkyJavaPocStack(app, "VenkyJavaPocStack", StackProps.builder()
                 // If you don't specify 'env', this stack will be environment-agnostic.
                 // Account/Region-dependent features and context lookups will not work,
                 // but a single synthesized template can be deployed anywhere.
@@ -34,7 +34,7 @@ public class VenkyJavaPocApp {
                 */
 
                 // For more information, see https://docs.aws.amazon.com/cdk/latest/guide/environments.html
-                .build());
+                //.build());
 
         app.synth();
     }
